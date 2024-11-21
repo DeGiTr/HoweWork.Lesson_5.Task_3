@@ -11,13 +11,13 @@ print("Вклад Майкла (A): ", mike_invest, "$")
 print("Вклад Ивана (B): ", ivan_invest, "$")
 print()
 print("Результат: ")
-if (mike_invest and ivan_invest) >= summ_invest: 
+if (mike_invest and ivan_invest) >= summ_invest:  # условия если оба смогут вложиться
     print(2)
-elif (mike_invest >= summ_invest) and (ivan_invest <= summ_invest):
+elif (mike_invest >= summ_invest) and (ivan_invest <= summ_invest): # условия если только Майк сможет вложиться
     print("Mike")
-elif (mike_invest <= summ_invest) and (ivan_invest >= summ_invest):
+elif (mike_invest <= summ_invest) and (ivan_invest >= summ_invest): # условия если только Иван сможет вложиться
     print("Ivan")
-elif (mike_invest < summ_invest) and (ivan_invest < summ_invest) and (mike_invest + ivan_invest >= summ_invest):
+elif (mike_invest < summ_invest) and (ivan_invest < summ_invest) and (mike_invest + ivan_invest >= summ_invest): # условия если толко объединившись смогут вложиться
     print("1")
-else:
+else: # никто не сможет вложиться
     print(0)
