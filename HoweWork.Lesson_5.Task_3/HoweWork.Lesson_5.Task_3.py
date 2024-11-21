@@ -10,5 +10,14 @@ print("Минимальная сумма инвестиций (X): ", summ_inves
 print("Вклад Майкла (A): ", mike_invest, "$")
 print("Вклад Ивана (B): ", ivan_invest, "$")
 print()
-if mike_invest or ivan_invest == summ_invest
-
+print("Результат: ")
+if (mike_invest and ivan_invest) >= summ_invest: 
+    print(2)
+elif (mike_invest >= summ_invest) and (ivan_invest <= summ_invest):
+    print("Mike")
+elif (mike_invest <= summ_invest) and (ivan_invest >= summ_invest):
+    print("Ivan")
+elif (mike_invest < summ_invest) and (ivan_invest < summ_invest) and (mike_invest + ivan_invest >= summ_invest):
+    print("1")
+else:
+    print(0)
